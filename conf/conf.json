@@ -1,0 +1,27 @@
+{
+	"digitsBitMap": {
+		"0":"111101010",
+		"1":"100100000",
+		"2":"011110010",
+		"3":"110110010",
+		"4":"100111000",
+		"5":"110011010",
+		"6":"111011010",
+		"7":"100100010",
+		"8":"111111010",
+		"9":"110111010"
+	}
+,
+	"sevenSegLocationToCorrectChar": {
+		"0_top-left":"",
+		"1_top-middle":"_",
+		"2_to-right":"",
+		"3_middle-left":"|",
+		"4_middle-middle":"_",
+		"5_middle-right":"|",
+		"6_bottom-left":"|",
+		"7_bottom-middle":"_",
+		"8_bottom-right":"|"
+	}
+
+}
