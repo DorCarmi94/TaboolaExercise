@@ -30,7 +30,7 @@ public class Q3_WordsCounterTest {
     }
 
     @Test
-    public void test_main_sameWord() {
+    public void test_a_main_sameWord() {
         Q3_WordsCounter.main(new String[]{
                 "input_Q3a.txt",
                 "input_Q3b.txt",
@@ -49,7 +49,8 @@ public class Q3_WordsCounterTest {
     }
 
     @Test
-    public void test_main_FromExercise() {
+    public void test_b_main_FromExercise() {
+        int firstAmount=wordsBank.GetTotalNumberOfWords();
         Q3_WordsCounter.main(new String[]{
                 "input_Q3_fromEx_1.txt",
                 "input_Q3_fromEx_2.txt",
@@ -66,11 +67,12 @@ public class Q3_WordsCounterTest {
         assertEquals(1, wordsBank.GetWordAppearances("third"));
         assertEquals(3, wordsBank.GetWordAppearances("this"));
 
-        assertEquals(17, wordsBank.GetTotalNumberOfWords());
+        assertEquals(firstAmount+17, wordsBank.GetTotalNumberOfWords());
     }
 
     @Test
-    public void test_main_FromWiki() {
+    public void test_c_main_FromWiki() {
+        wordsBank.wordsCount.clear();
         Q3_WordsCounter.main(new String[]{"input_Q3_fromWiki_Deep.txt"});
 
 
